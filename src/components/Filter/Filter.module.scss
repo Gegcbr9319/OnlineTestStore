@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid green;
+    width: 150px;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.label {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+.button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(188, 249, 229);
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: black;
+}
+
+.reset {
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(152, 248, 216);
+}

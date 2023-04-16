@@ -9,8 +9,7 @@
             "value": 27.12
         },
         "image": "/images/1.png",
-        "brand": 9,
-        "color": "red"
+        "brand": 9
     },
     {
         "type": "simple",
@@ -22,8 +21,7 @@
             "value": 36.87
         },
         "image": "/images/2.png",
-        "brand": 8,
-        "color": "green"
+        "brand": 8
     },
     {
         "type": "simple",
@@ -35,8 +33,7 @@
             "value": 28.91
         },
         "image": "/images/3.png",
-        "brand": 2,
-        "color": "blue"
+        "brand": 2
     },
     {
         "type": "simple",
@@ -48,8 +45,7 @@
             "value": 41.23
         },
         "image": "/images/4.png",
-        "brand": 7,
-        "color": "red"
+        "brand": 7
     },
     {
         "type": "simple",
@@ -61,8 +57,7 @@
             "value": 88.0
         },
         "image": "/images/5.png",
-        "brand": 3,
-        "color": "red"
+        "brand": 3
     },
     {
         "type": "simple",
@@ -74,8 +69,7 @@
             "value": 127.41
         },
         "image": "/images/6.png",
-        "brand": 6,
-        "color": "green"
+        "brand": 6
     },
     {
         "type": "simple",
@@ -87,8 +81,7 @@
             "value": 123.4
         },
         "image": "/images/7.png",
-        "brand": 5,
-        "color": "green"
+        "brand": 5
     },
     {
         "type": "simple",
@@ -100,8 +93,7 @@
             "value": 92.32
         },
         "image": "/images/8.png",
-        "brand": 1,
-        "color": "red"
+        "brand": 1
     },
     {
         "type": "simple",
@@ -113,7 +105,6 @@
             "value": 53.4
         },
         "image": "/images/9.png",
-        "brand": 2,
-        "color": "blue"
+        "brand": 2
     }
 ]
