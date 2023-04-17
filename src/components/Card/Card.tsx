@@ -14,14 +14,7 @@ interface IProducts {
     brand: number;
 }
 
-export const Card: FC<IProducts> = ({
-    image,
-
-    title,
-
-    brand,
-    regular_price,
-}) => {
+export const Card: FC<IProducts> = ({ image, title, brand, regular_price }) => {
     return (
         <div className={styles.card}>
             <h2> {title}</h2>

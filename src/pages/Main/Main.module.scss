@@ -1,0 +1,33 @@
+.mainCenter {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.main {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.buttonsPage {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonsPage button {
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(188, 249, 229);
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.buttonsPage button:hover {
+    border: 1px solid red;
+    color: rgb(250, 2, 2);
+}

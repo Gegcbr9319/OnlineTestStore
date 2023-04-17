@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { Card } from '../index';
 import styles from './Cards.module.scss';
-
-import products from '../../assets/data/products.json';
 
 interface IProducts {
     type: string;
@@ -18,6 +17,10 @@ interface IProducts {
 }
 
 export const Cards = () => {
+    const products = useSelector(
+        (state: { displayState: { display: IProducts[] } }) => state.displayState.display
+    );
+
     return (
         <div className={styles.cards}>
             {products.map((item) => {
