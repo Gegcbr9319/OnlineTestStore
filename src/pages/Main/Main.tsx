@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import styles from './Main.module.scss';
-import { Cards, Filter } from '../../components';
+import { Cards, Filter, Sort } from '../../components';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateDisplay } from '../../assets/redux/displaySlice';
 
@@ -39,7 +39,10 @@ export const Main = () => {
     return (
         <div className={styles.main}>
             <div className={styles.mainCenter}>
-                <Filter />
+                <div className={styles.setting}>
+                    <Filter />
+                    <Sort />
+                </div>
                 <Cards />
             </div>
             <div className={styles.buttonsPage}>

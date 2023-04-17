@@ -27,8 +27,6 @@ const productsSlice = createSlice({
             state.products = [...JSON.parse(JSON.stringify(productsJSON))];
         },
         updateProducts(state, action) {
-            resetProducts();
-
             state.products = action.payload;
         },
     },

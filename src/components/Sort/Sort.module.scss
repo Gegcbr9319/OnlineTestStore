@@ -1,0 +1,16 @@
+.sort {
+    border: 1px solid green;
+    width: 150px;
+    border-radius: 12px;
+    padding: 5px;
+    border-radius: 12px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sort select {
+    border-radius: 5px;
+}
