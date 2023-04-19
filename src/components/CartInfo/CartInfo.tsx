@@ -35,21 +35,27 @@ export const CartInfo: FC<IData> = ({ id, title, brand, regular_price, count }) 
     };
 
     return (
-        <div>
+        <div className={styles.cartInfo}>
             <h3>{title}</h3>
-            <h4>{brand}</h4>
+            <h4>Brand: {brand}</h4>
             <h4>
+                Price:
                 {price.toFixed(2)}
                 {regular_price.currency}
             </h4>
-            <div>
-                <button onClick={deleteInfo} disabled={count === 1}>
+            <div className={styles.buttons}>
+                <h4>value:</h4>
+                <button onClick={deleteInfo} disabled={count === 1} className={styles.button}>
                     -
                 </button>
                 {count}
-                <button onClick={addInfo}>+</button>
+                <button onClick={addInfo} className={styles.button}>
+                    +
+                </button>
             </div>
-            <button onClick={deleteCart}>Delete from cart</button>
+            <button onClick={deleteCart} className={styles.buttonDelete}>
+                Delete from cart
+            </button>
         </div>
     );
 };

@@ -1,0 +1,27 @@
+.modalInfo {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: rgb(202, 251, 235);
+    align-items: center;
+    gap: 20px;
+}
+.modalInfo button {
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}

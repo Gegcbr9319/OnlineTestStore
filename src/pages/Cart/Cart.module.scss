@@ -1,0 +1,41 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.cartCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.cartInfo {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 650px;
+    justify-content: space-between;
+}
+
+.cartPrice {
+    margin: 0 auto;
+}
+
+.cartForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+
+.cartForm input {
+    text-align: center;
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+}

@@ -5,3 +5,4 @@ export * from './Cards';
 export * from './Filter';
 export * from './Sort';
 export * from './CartInfo';
+export * from './Modal';

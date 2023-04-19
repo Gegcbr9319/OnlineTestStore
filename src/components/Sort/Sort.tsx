@@ -25,7 +25,7 @@ export const Sort = () => {
 
     const sorting = useCallback(() => {
         const sortProduct = [...JSON.parse(JSON.stringify(products))];
-        if (sortValue.length === 0) {
+        if (sortValue.length === 0 || sortValue === 'none') {
             return;
         }
         if (sortValue === 'descending') {
@@ -55,6 +55,7 @@ export const Sort = () => {
                     setSortValue(e.target.value);
                 }}
             >
+                <option value="none">None</option>
                 <option value="descending">Descending order</option>
                 <option value="ascending"> Ascending</option>
             </select>
