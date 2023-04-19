@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateData } from '../../assets/redux/cartDataSlice';
 import styles from './Card.module.scss';
@@ -28,10 +28,16 @@ interface IData {
 
 export const Card: FC<IProducts> = ({ id, image, title, brand, regular_price }) => {
     const dispatch = useDispatch();
+    const [path, setPath] = useState(`../../assets${image}`);
     const cartData = useSelector(
         (state: { cartDataState: { cartData: IData[] } }) => state.cartDataState.cartData
     );
 
+    /*   const imgImport = async () => {
+        const module = await import(`../../assets${image}`);
+        setPath(module);
+        return module;
+    }; */
     const cardInfo: IData = {
         id: id,
         title: title,
@@ -43,12 +49,16 @@ export const Card: FC<IProducts> = ({ id, image, title, brand, regular_price }) 
     const addInfoCart = () => {
         dispatch(updateData(cardInfo));
     };
+
+    /*  useEffect(() => {
+        imgImport();
+    }, []); */
     return (
         <div className={styles.card}>
             <h2> {title}</h2>
             <h3>brand: {brand}</h3>
 
-            <img className={styles.image} src={`src/assets${image}`} alt={image} />
+            <img className={styles.image} src={path} alt={image} />
             <p>
                 Price:{regular_price.value} {regular_price.currency}
             </p>
