@@ -4,9 +4,24 @@ import { NavLink } from 'react-router-dom';
 import cart from '../../assets/img/cart.svg';
 import styles from './Header.module.scss';
 
+interface IData {
+    id: number;
+    title: string;
+    regular_price: {
+        currency: string;
+        value: number;
+    };
+    brand: number;
+    count: number;
+}
+
 export const Header = () => {
-    const cartNumber = useSelector(
-        (state: { cartNumberState: { numberCart: number } }) => state.cartNumberState.numberCart
+    const cartData = useSelector(
+        (state: { cartDataState: { cartData: IData[] } }) => state.cartDataState.cartData
+    );
+    const cartNumber = cartData.reduce(
+        (accumulator, currentValue) => accumulator + currentValue.count,
+        0
     );
     return (
         <header className={styles.header}>

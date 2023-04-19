@@ -1,30 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import styles from './Filter.module.scss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { updateProducts, resetProducts } from '../../assets/redux/productsSlice';
 import productsJSON from '../../assets/data/products.json';
 
-interface IProducts {
-    type: string;
-    id: number;
-    sku: string;
-    title: string;
-    regular_price: {
-        currency: string;
-        value: number;
-    };
-    image: string;
-    brand: number;
-}
-interface IFilter {
-    value: number;
-}
-
 export const Filter = () => {
-    const products = useSelector(
-        (state: { productsState: { products: IProducts[] } }) => state.productsState.products
-    );
     const [filterState, setFilterState] = useState<number[]>([]);
     const dispatch = useDispatch();
     const defaultValues = [1, 2, 3, 4, 5, 6, 7, 8];

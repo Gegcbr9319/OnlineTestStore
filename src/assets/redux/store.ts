@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import filterSlice from './filterSlice';
 import productsSlice from './productsSlice';
 import displaySlice from './displaySlice';
-import cartNumberSlice from './cartNumberSlice';
+
 import cartDataSlice from './cartDataSlice';
 
 export const store = configureStore({
@@ -10,7 +10,6 @@ export const store = configureStore({
         filterState: filterSlice,
         productsState: productsSlice,
         displayState: displaySlice,
-        cartNumberState: cartNumberSlice,
         cartDataState: cartDataSlice,
     },
 });

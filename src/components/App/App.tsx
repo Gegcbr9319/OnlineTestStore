@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { Cart, Main } from '../../pages';
 import { Header } from '../index';
 
