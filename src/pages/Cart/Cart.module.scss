@@ -39,3 +39,29 @@
     height: 25px;
     border-radius: 5px;
 }
+
+@media (max-width: 640px) {
+    .cart {
+        width: 100vw;
+        gap: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .cartCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .cartInfo {
+        height: auto;
+        width: 100vw;
+        gap: 15px;
+    }
+    .cartForm {
+        width: 90%;
+        height: auto;
+    }
+}

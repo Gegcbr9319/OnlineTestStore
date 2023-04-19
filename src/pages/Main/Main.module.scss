@@ -37,3 +37,28 @@
     flex-direction: column;
     gap: 10px;
 }
+
+@media (max-width: 640px) {
+    .mainCenter {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0px;
+        gap: 50px;
+    }
+    .setting {
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        gap: 10px;
+        padding-top: 10px;
+    }
+    .buttonsPage {
+        width: 100vw;
+        padding-bottom: 10px;
+    }
+    .buttonsPage button {
+        width: 80px;
+        height: 30px;
+    }
+}

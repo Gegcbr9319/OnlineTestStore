@@ -24,3 +24,11 @@
 .number p {
     font-size: 22px;
 }
+
+@media (max-width: 640px) {
+    .header {
+        width: 100vw;
+        padding: 0px;
+        justify-content: space-around;
+    }
+}

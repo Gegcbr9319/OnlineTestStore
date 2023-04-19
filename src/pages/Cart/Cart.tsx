@@ -41,8 +41,6 @@ export const Cart = () => {
                 data: cartData,
             }).then((data) => {
                 setAnswer(true);
-
-                console.log(data);
             });
         },
     });

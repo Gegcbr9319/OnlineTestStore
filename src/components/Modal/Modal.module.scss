@@ -25,3 +25,19 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 640px) {
+    .modal {
+        position: absolute;
+        background-color: none;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modalInfo {
+        width: 100vw;
+        height: 300px;
+    }
+}
